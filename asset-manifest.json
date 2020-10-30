@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/button-countdown/static/css/main.323ac412.chunk.css",
+    "main.js": "/button-countdown/static/js/main.e7afcde5.chunk.js",
+    "main.js.map": "/button-countdown/static/js/main.e7afcde5.chunk.js.map",
+    "runtime-main.js": "/button-countdown/static/js/runtime-main.6cf71e7f.js",
+    "runtime-main.js.map": "/button-countdown/static/js/runtime-main.6cf71e7f.js.map",
+    "static/js/2.352eb410.chunk.js": "/button-countdown/static/js/2.352eb410.chunk.js",
+    "static/js/2.352eb410.chunk.js.map": "/button-countdown/static/js/2.352eb410.chunk.js.map",
+    "static/js/3.1566d743.chunk.js": "/button-countdown/static/js/3.1566d743.chunk.js",
+    "static/js/3.1566d743.chunk.js.map": "/button-countdown/static/js/3.1566d743.chunk.js.map",
+    "index.html": "/button-countdown/index.html",
+    "static/css/main.323ac412.chunk.css.map": "/button-countdown/static/css/main.323ac412.chunk.css.map",
+    "static/js/2.352eb410.chunk.js.LICENSE.txt": "/button-countdown/static/js/2.352eb410.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6cf71e7f.js",
+    "static/js/2.352eb410.chunk.js",
+    "static/css/main.323ac412.chunk.css",
+    "static/js/main.e7afcde5.chunk.js"
+  ]
+}
