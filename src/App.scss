@@ -1,0 +1,167 @@
+$counter-stage-1: rgb(145, 92, 182);
+$counter-stage-2: #52aafb;
+$counter-stage-3: #f6830f;
+$counter-stage-4: #aa3a3a;
+
+$background-1: #f6f5f5;
+$background-2: #282c34;
+
+.App {
+  text-align: center;
+}
+
+.App-header {
+  // background-color: #282c34;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &.count-15 {
+    background-color: $background-1;
+  }
+  &.count-14 {
+    background-color: $background-1;
+  }
+  &.count-13 {
+    background-color: $background-1;
+  }
+  &.count-12 {
+    background-color: $background-1;
+  }
+  &.count-11 {
+    background-color: $background-1;
+  }
+  &.count-10 {
+    background-color: white;
+  }
+  &.count-9 {
+    background-color: white;
+  }
+  &.count-8 {
+    background-color: white;
+  }
+  &.count-7 {
+    background-color: white;
+  }
+  &.count-6 {
+    background-color: $background-2;
+  }
+
+  &.count-5 {
+    background-color: $background-2;
+  }
+  &.count-4 {
+    background-color: $background-2;
+  }
+  &.count-3 {
+    background-color: black;
+  }
+  &.count-2 {
+    background-color: black;
+  }
+  &.count-1 {
+    background-color: black;
+  }
+  &.count-0 {
+    background-color: white;
+  }
+
+  .button {
+    background-color: #52aafb;
+    border: none;
+    color: rgba(255, 255, 255, 0);
+    padding: 3rem 5rem;
+    border-radius: 0.25rem;
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+      color: rgba(255, 255, 255, 1);
+      box-shadow: 0 20px 65px rgba(135, 189, 226, 1);
+    }
+  }
+  .timer-display {
+    font-size: 15rem;
+    font-weight: bolder;
+    &.count-15 {
+      color: $counter-stage-1;
+      text-shadow: 2px 4px 20px rgba($counter-stage-1, 0.8);
+    }
+    &.count-14 {
+      color: $counter-stage-1;
+      text-shadow: 2px 4px 20px rgba($counter-stage-1, 0.8);
+    }
+    &.count-13 {
+      color: $counter-stage-1;
+      text-shadow: 2px 4px 20px rgba($counter-stage-1, 0.8);
+    }
+    &.count-12 {
+      color: $counter-stage-1;
+      text-shadow: 2px 4px 20px rgba($counter-stage-1, 0.8);
+    }
+    &.count-11 {
+      color: $counter-stage-1;
+      text-shadow: 2px 4px 20px rgba($counter-stage-1, 0.8);
+    }
+    &.count-10 {
+      color: $counter-stage-2;
+      text-shadow: 2px 4px 20px rgba($counter-stage-2, 0.8);
+    }
+    &.count-9 {
+      color: $counter-stage-2;
+      text-shadow: 2px 4px 20px rgba($counter-stage-2, 0.8);
+    }
+    &.count-8 {
+      color: $counter-stage-2;
+      text-shadow: 2px 4px 20px rgba($counter-stage-2, 0.8);
+    }
+    &.count-7 {
+      color: $counter-stage-2;
+      text-shadow: 2px 4px 20px rgba($counter-stage-2, 0.8);
+    }
+    &.count-6 {
+      color: $counter-stage-3;
+      text-shadow: 10px 20px 50px rgba($counter-stage-3, 0.8);
+      animation: blinker 1s linear infinite;
+    }
+
+    &.count-5 {
+      color: $counter-stage-3;
+      text-shadow: 10px 20px 50px rgba($counter-stage-3, 0.8);
+      animation: blinker 1s linear infinite;
+    }
+    &.count-4 {
+      color: $counter-stage-3;
+      text-shadow: 10px 20px 50px rgba($counter-stage-3, 0.8);
+      animation: blinker 1s linear infinite;
+    }
+    &.count-3 {
+      color: $counter-stage-4;
+      text-shadow: 10px 20px 50px rgba($counter-stage-4, 0.8);
+      animation: blinker 0.5s linear infinite;
+    }
+    &.count-2 {
+      color: $counter-stage-4;
+      text-shadow: 10px 20px 50px rgba($counter-stage-4, 0.8);
+      animation: blinker 0.5s linear infinite;
+    }
+    &.count-1 {
+      color: white;
+      text-shadow: 10px 20px 50px rgba(white, 0.8);
+    }
+    &.count-0 {
+      color: black;
+    }
+  }
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+}

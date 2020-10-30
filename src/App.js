@@ -1,22 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import "./App.scss";
 
 function App() {
+  const [counter, setCounter] = React.useState(15);
+  const onCounterClick = () => {
+    setCounter(15);
+  };
+
+  // Third Attempts
+  React.useEffect(() => {
+    const timer =
+      counter > 0 && setInterval(() => setCounter(counter - 1), 5000);
+    return () => clearInterval(timer);
+  }, [counter]);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+      <header className={"App-header " + "count-" + counter}>
+        <div>
+          <h1 id="counter" className={"timer-display " + "count-" + counter}>
+            {counter}
+          </h1>
+        </div>
+        <div>
+          <button class="button" onClick={onCounterClick}>
+            ᛖᛁᛊᚢᛒᚦ
+          </button>
+        </div>
       </header>
     </div>
   );
